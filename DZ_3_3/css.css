@@ -1,0 +1,218 @@
+/* display: flex | inline-flex */
+
+
+/* flex-direction: row | row-reverse | column | column-reverse */
+
+
+/* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly */
+
+
+/* align-items: flex-start | flex-end | center | stretch | baseline */
+
+
+/*flex-wrap: nowrap | wrap | wrap-reverse*/
+
+
+/*flex-flow: flex-direction || flex-wrap */
+
+
+/*align-content: stretch | flex-start | flex-end | center | space-around | space-between*/
+
+
+/*flex-basis = (5em, 4rem, 48%, 200px); min-width = 20px; max-width = 1000xp;
+height, min-height, max-height), если свойство flex-direction имеет значение column*/
+
+
+/*flex-grow: 1; flex-shrink: 1; flex: flex-grow flex-shrink flex-basis;*/
+
+
+/* div.chat {
+    width: 100% auto;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cyan;
+}
+
+div.chat div.line1,
+div.line2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 60px auto;
+    width: 900px;
+    max-width: 90%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+}
+
+div.chat div.line2 {
+    flex-direction: row-reverse;
+}
+
+div.chat div div.message {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 2.5;
+    background-color: palevioletred;
+}
+
+div.chat div.line2 div.message {
+    background-color: blue;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+}
+
+div.chat div div.message p {
+    padding: 10px;
+    font-size: 13px;
+    color: white;
+}
+
+div.chat div div.user,
+div.emptyBlock {
+    width: 200px;
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-shrink: 1;
+}
+
+div.chat div.line2 div.user {
+    flex-direction: row-reverse;
+}
+
+div.chat div div.user div.avatar {
+    margin-left: 3px;
+    margin-right: 3px;
+    flex-shrink: 1;
+    align-self: center;
+}
+
+div.chat div div.user div.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.chat div div.user div.info h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    ;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+div.chat div div.user div.info p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: gray;
+}
+
+div.chat div div.user div.avatar img {
+    height: 100% auto;
+} */
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.mainContainer {
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    background-color: cornflowerblue;
+}
+
+h1 {
+    background-color: blue;
+    margin: 0;
+    padding: 11px;
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+div.boardContainer {
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: aqua;
+}
+
+div.boardContainer p.nameColumn {
+    margin: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+div.board {
+    margin: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    flex-basis: 30%;
+    border-radius: 10px;
+    background-color: chartreuse;
+}
+
+div.contentContainer {
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: cornflowerblue;
+}
+
+div.text p {
+    margin: 10px;
+}
+
+div.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+div.info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+}
+
+div.info img {
+    margin-left: 10px;
+    height: 15px;
+}
+
+div.info span {
+    margin-left: 5px;
+}
+
+div.avatar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+div.avatar img {
+    height: 35px;
+}
