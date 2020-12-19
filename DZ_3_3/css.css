@@ -25,115 +25,19 @@ height, min-height, max-height), если свойство flex-direction име
 
 /*flex-grow: 1; flex-shrink: 1; flex: flex-grow flex-shrink flex-basis;*/
 
-
-/* div.chat {
-    width: 100% auto;
-    margin: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: cyan;
+html {
+    height: 100%;
 }
-
-div.chat div.line1,
-div.line2 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    height: 60px auto;
-    width: 900px;
-    max-width: 90%;
-    min-width: 350px;
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 1;
-}
-
-div.chat div.line2 {
-    flex-direction: row-reverse;
-}
-
-div.chat div div.message {
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 15px;
-    border-bottom-left-radius: 0px;
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 2.5;
-    background-color: palevioletred;
-}
-
-div.chat div.line2 div.message {
-    background-color: blue;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 0px;
-}
-
-div.chat div div.message p {
-    padding: 10px;
-    font-size: 13px;
-    color: white;
-}
-
-div.chat div div.user,
-div.emptyBlock {
-    width: 200px;
-    display: inline-flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    flex-shrink: 1;
-}
-
-div.chat div.line2 div.user {
-    flex-direction: row-reverse;
-}
-
-div.chat div div.user div.avatar {
-    margin-left: 3px;
-    margin-right: 3px;
-    flex-shrink: 1;
-    align-self: center;
-}
-
-div.chat div div.user div.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-div.chat div div.user div.info h4 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    ;
-    margin-left: 5px;
-    font-size: 12px;
-}
-
-div.chat div div.user div.info p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    font-size: 12px;
-    color: gray;
-}
-
-div.chat div div.user div.avatar img {
-    height: 100% auto;
-} */
 
 body {
-    padding: 0px;
-    margin: 0px;
-}
-
-div.mainContainer {
-    height: 100vh;
+    display: -webkit-box;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    background-color: cornflowerblue;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px;
+    overflow-y: hidden;
 }
 
 h1 {
@@ -142,15 +46,19 @@ h1 {
     padding: 11px;
     padding-left: 25px;
     font-size: 25px;
+    min-width: 5%;
 }
 
 div.boardContainer {
-    padding: 10px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    flex-grow: 1;
-    background-color: aqua;
+    padding: 10px;
+    background-color: tan;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 div.boardContainer p.nameColumn {
@@ -166,11 +74,12 @@ div.board {
     padding: 10px;
     min-width: 300px;
     max-width: 400px;
+    flex-basis: 30%;
     display: flex;
     flex-flow: column nowrap;
-    align-items: stretch;
-    flex-basis: 30%;
+    flex: 1 1 auto;
     border-radius: 10px;
+    overflow-y: auto;
     background-color: chartreuse;
 }
 
